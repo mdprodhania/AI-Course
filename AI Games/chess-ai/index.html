@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chess Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AI Chess Game</h1>
+      <div class="game-info">
+        <div id="status">Your turn (White)</div>
+        <button id="restart-btn">Restart Game</button>
+      </div>
+      <div id="board" class="chess-board"></div>
+      <div class="settings">
+        <label for="difficulty">AI Difficulty (Search Depth):</label>
+        <select id="difficulty">
+          <option value="1">Easy (Depth 1)</option>
+          <option value="2" selected>Medium (Depth 2)</option>
+          <option value="3">Hard (Depth 3)</option>
+        </select>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

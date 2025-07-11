@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe AI</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="msg-container hide">
+      <p id="msg">WINNER</p>
+      <button id="new-btn" type="button">New Game</button>
+    </div>
+    <main>
+      <h1>Tic Tac Toe Game</h1>
+      <div class="player-info">
+        <div id="player-name-display">
+          <span class="player-label">Player:</span>
+          <span id="player-name"></span>
+        </div>
+        <div class="score-board">
+          <div class="score-item player-score-container">
+            <div class="score-label">You</div>
+            <div class="score-value"><span id="player-score">0</span></div>
+          </div>
+          <div class="score-divider">-</div>
+          <div class="score-item computer-score-container">
+            <div class="score-label">Computer</div>
+            <div class="score-value"><span id="computer-score">0</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="game">
+          <button class="box" type="button" title="Game cell"></button>
+          <button class="box" type="button" title="Game cell"></button>
+          <button class="box" type="button" title="Game cell"></button>
+          <button class="box" type="button" title="Game cell"></button>
+          <button class="box" type="button" title="Game cell"></button>
+          <button class="box" type="button" title="Game cell"></button>
+          <button class="box" type="button" title="Game cell"></button>
+          <button class="box" type="button" title="Game cell"></button>
+          <button class="box" type="button" title="Game cell"></button>
+        </div>
+      </div>
+      <button id="reset-btn" type="button">Reset Game</button>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/ai.js"></script>
+  </body>
+</html>

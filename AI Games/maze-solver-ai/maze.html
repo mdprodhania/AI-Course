@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Solver</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1> Maze Solver</h1>
+    <div>
+      <button id="generateMazeButton">Generate New Maze</button>
+      <button id="clearPathButton">Clear Path</button>
+      <button id="resetButton">Reset</button>
+      <button id="startRaceButton" class="start-race-btn">Start Race!</button>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-color wall"></div>
+        <span>Wall</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color path"></div>
+        <span>Path</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color start"></div>
+        <span>Start</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color end"></div>
+        <span>End</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color user"></div>
+        <span>Player (You)</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color computer"></div>
+        <span>Computer (AI)</span>
+      </div>
+    </div>
+    <div class="status">
+      <p id="statusMessage">Click "Generate New Maze" to start!</p>
+    </div>
+
+    <div
+      class="scoreboard"
+      style="margin: 15px 0; font-size: 18px; font-weight: bold"
+    >
+      <span style="color: #3498db; margin-right: 15px"
+        >You: <span id="playerScore">0</span></span
+      >
+      <span style="color: #ff7eb9"
+        >Computer: <span id="computerScore">0</span></span
+      >
+    </div>
+
+    <div id="mazeContainer" class="maze-container">
+      <!-- Maze will be generated here -->
+    </div>
+
+    <script src="maze.js"></script>
+  </body>
+</html>
