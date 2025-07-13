@@ -1,4 +1,15 @@
 
+/**
+ * Tic-Tac-Toe Game Logic
+ *
+ * Handles player and AI moves, game state management, score tracking, and UI updates.
+ * Features:
+ * - Prompts for player name and displays it
+ * - Tracks player and computer scores
+ * - Implements game rules and win/draw detection
+ * - Integrates AI opponent using minimax algorithm (from ai.js)
+ * - Provides reset and new game functionality
+ */
 const boxes = document.querySelectorAll(".box");
 const msgContainer = document.querySelector(".msg-container");
 const msg = document.getElementById("msg");
